@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Non classé
+lang: fr
 ---
 J&rsquo;ai récemment eu l&rsquo;occasion de coacher des développeurs débutants. Ça a été l&rsquo;occasion pour moi de faire le point sur des notions de base mal comprises, et peut-être l&rsquo;occasion pour vous d&rsquo;apprendre de choses !
 

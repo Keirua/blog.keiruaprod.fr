@@ -16,9 +16,8 @@
 title: KeiruaProd
 email: clement@keiruaprod.fr
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Techical blog related to www.keiruaprod.fr
+  Freelance web development, symfony, python, rust, remote
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://blog.keiruaprod.fr" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: clemkeirua
@@ -28,7 +27,20 @@ github_username:  keirua
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
+ - jekyll-feed
+ #- jekyll-remote-theme
+ #- jekyll-paginate
+
+navigation:
+  Blog: index.html
+  Development: archive.md
+  Training: README.md
+
+icons:
+  envelope: "mailto:clement@keiruaprod.fr"
+  github: "https://github.com/keirua"
+  twitter: "https://twitter.com/clemkeirua"
+  rss: "/contrast-demo/feed.xml"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
