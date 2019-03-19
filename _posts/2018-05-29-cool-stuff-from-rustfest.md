@@ -81,10 +81,10 @@ where
     fn update(&mut self, msg: Self::Message, env: &mut Env<CTX, Self>) -> ShouldRender {
         match msg {
             Msg::Increment => {
-                self.value = self.value + 1;
+                self.value = self.value+1;
             }
             Msg::Decrement => {
-                self.value = self.value - 1;
+                self.value = self.value-1;
             }
         }
         true
@@ -99,23 +99,25 @@ where
   </li>
 </ol>
 
-    impl<CTX> Renderable<CTX, Model> for Model
-    where
-        CTX: AsMut<ConsoleService> + 'static,
-    {
-        fn view(&self) -> Html<CTX, Self> {
-            html! {
-                <div>
-                    <nav class="menu",>
-                        <button onclick=|_| Msg::Increment,>{ "Increment" }</button>
-                        <button onclick=|_| Msg::Decrement,>{ "Decrement" }</button>
-                    </nav>
-                    <p>{ self.value }</p>
-                    <p>{ Date::new().to_string() }</p>
-                </div>
-            }
+```rust
+impl<CTX> Renderable<CTX, Model> for Model
+where
+    CTX: AsMut<ConsoleService> + 'static,
+{
+    fn view(&self) -> Html<CTX, Self> {
+        html! {
+            <div>
+                <nav class="menu",>
+                    <button onclick=|_| Msg::Increment,>{ "Increment" }</button>
+                    <button onclick=|_| Msg::Decrement,>{ "Decrement" }</button>
+                </nav>
+                <p>{ self.value }</p>
+                <p>{ Date::new().to_string() }</p>
+            </div>
         }
     }
+}
+```
     
 
 and that&rsquo;s pretty much it ! It works well with [stdweb](https://github.com/koute/stdweb) and [cargo web](https://github.com/koute/cargo-web).
