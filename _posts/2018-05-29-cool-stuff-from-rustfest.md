@@ -66,29 +66,31 @@ Let&rsquo;s take an example : imagine we want to create a counter, with 2 button
   </li>
 </ol>
 
-    impl<CTX> Component<CTX> for Model
-    where
-        CTX: AsMut<ConsoleService>,
-    {
-        type Message = Msg;
-        type Properties = ();
-    
-        fn create(_: Self::Properties, _: &mut Env<CTX, Self>) -> Self {
-            Model { value: 0 }
-        }
-    
-        fn update(&mut self, msg: Self::Message, env: &mut Env<CTX, Self>) -> ShouldRender {
-            match msg {
-                Msg::Increment => {
-                    self.value = self.value + 1;
-                }
-                Msg::Decrement => {
-                    self.value = self.value - 1;
-                }
-            }
-            true
-        }
+```rust
+impl<CTX> Component<CTX> for Model
+where
+    CTX: AsMut<ConsoleService>,
+{
+    type Message = Msg;
+    type Properties = ();
+
+    fn create(_: Self::Properties, _: &mut Env<CTX, Self>) -> Self {
+        Model { value: 0 }
     }
+
+    fn update(&mut self, msg: Self::Message, env: &mut Env<CTX, Self>) -> ShouldRender {
+        match msg {
+            Msg::Increment => {
+                self.value = self.value + 1;
+            }
+            Msg::Decrement => {
+                self.value = self.value - 1;
+            }
+        }
+        true
+    }
+}
+```
     
 
 <ol start="4">
