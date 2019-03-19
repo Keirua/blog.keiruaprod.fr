@@ -32,15 +32,15 @@ plugins:
  #- jekyll-paginate
 
 navigation:
-  Blog: index.html
-  Development: archive.md
-  Training: README.md
+  Blog: "/"
+  Development: "https://www.keiruaprod.fr/developpement"
+  Training: "https://www.keiruaprod.fr/formations"
 
 icons:
   envelope: "mailto:clement@keiruaprod.fr"
   github: "https://github.com/keirua"
   twitter: "https://twitter.com/clemkeirua"
-  rss: "/contrast-demo/feed.xml"
+  rss: "/feed.xml"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

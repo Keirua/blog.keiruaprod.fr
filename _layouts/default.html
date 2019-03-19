@@ -21,7 +21,7 @@
 <body class="{% if site.dark_theme %}dark{% else %}light{% endif %}">
 
 <header>
-  {% unless site.hide_title %}<h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>{% endunless %}
+  {% unless site.hide_title %}<h1 id="main"><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>{% endunless %}
   {% if site.navigation %}
   <nav>
     {% for path in site.navigation %}
