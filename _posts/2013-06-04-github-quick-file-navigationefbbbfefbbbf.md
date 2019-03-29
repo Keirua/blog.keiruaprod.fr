@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Astuce
+lang: fr
 ---
 Did you know that Github features a file finder, similar to the one there is in SublimeText ?  
 It allow to quickly navigate to a file if you know what its filename looks like.

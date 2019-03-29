@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Rust
+lang: en
 ---
 I had a hard time learning rust at first. I didn&rsquo;t quite know where to start, I focused on the wrong resources and lost some time. Here are my suggestions about everything you may need in order to learn and work with rust: where and what to learn, how to properly install the compiler, what tools you need and how to use them.
 

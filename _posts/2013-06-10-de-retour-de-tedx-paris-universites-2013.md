@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Non classé
+lang: fr
 ---
 J&rsquo;ai eu l&rsquo;occasion de participer à un TEDx ce weekend. 15 conférences. Toutes n&rsquo;étaient pas intéressantes et il serait inutile de chercher à toutes les résumer (le plus intéressant, c&rsquo;est d&rsquo;y être), mais il y a quand même un paquet de choses à raconter. [Ted](http://www.ted.com), c&rsquo;est un rassemblement autour d&rsquo;idées qui « méritent de se répandre », cette fois ci afin de réfléchir autour de la société, de ses transformations et de comment y vivre mieux en collectivité, en particulier avec le numérique et tout ce qu&rsquo;il permet.
 

@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Non classé
+lang: fr
 ---
 La plupart du temps, pour tester si une clé est présente dans un tableau, il faut utiliser **array\_key\_exists**. Pourtant on trouve encore des **empty** et **isset** à sa place, en pensant que ces 3 fonctions sont interchangeables : ce n&rsquo;est pas le cas. Fin 2016 on trouve encore des confusions, donc cet article me servira de référence pour les futures revues de code 🙂
 

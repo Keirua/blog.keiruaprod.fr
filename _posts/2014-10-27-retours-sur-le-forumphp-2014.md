@@ -17,6 +17,7 @@ tags:
   - conférence
   - forum php
   - web
+lang: fr
 ---
 Le [Forum PHP](http://afup.org/pages/forumphp2014/ "Forum PHP 2014"), c&rsquo;était la semaine dernière et c&rsquo;était super bien. Petit compte rendu pour les absents, les liens ramènent vers la page joind.in des conférences.
 

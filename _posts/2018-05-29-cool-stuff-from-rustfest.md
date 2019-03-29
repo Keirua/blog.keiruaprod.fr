@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Rust
+lang: en
 ---
 I was at [Rustfest](http://paris.rustfest.eu/) this weekend. As expected, it was a great conference ! Lots of things to learn, and great people to meet.
 

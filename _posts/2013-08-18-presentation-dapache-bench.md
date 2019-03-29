@@ -21,6 +21,7 @@ tags:
   - dimensionnement
   - monitoring
   - serveur
+lang: fr
 ---
 Apache bench est un outil qui sert à faire des tests de performances sur une URL donnée.  
 On l&rsquo;installe via apt-get install apache2-utils, puis on s&rsquo;en sert (par exemple) de la manière suivante :

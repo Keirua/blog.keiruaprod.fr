@@ -23,6 +23,7 @@ tags:
   - Revelation
   - serveurs
   - ubuntu
+lang: fr
 ---
 Je travaille en permanence avec plusieurs machines différentes pour me connecter à des serveurs de développement, de préproduction, à ma machine virtuelle ou à des machines de productions. Après avoir oublié plusieurs fois certains mots de passe, puis m&rsquo;être planté une fois ou deux de terminal et avoir lanché des scripts sur la mauvaise machine, j&rsquo;ai commencé à utiliser des codes couleurs pour les différentes machines que j&rsquo;utilise. Et comme il est pénible de changer les codes couleurs à chaque connection, je me suis finalement mis à utiliser **Revelation** pour résoudre les deux problèmes en une fois.
 

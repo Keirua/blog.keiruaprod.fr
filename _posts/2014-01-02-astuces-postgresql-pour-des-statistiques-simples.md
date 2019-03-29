@@ -21,6 +21,7 @@ tags:
   - postgresql
   - statistiques
   - sum case
+lang: fr
 ---
 Même si les bases de données NoSQL ont la côte en ce moment, les bases de données SQL ont encore de beaux jours à vivre devant eux. En effet, dans beaucoup de situations, il est assez facile de sortir des statistiques avec quelques lignes de SQL. Voici quelques astuces que j&rsquo;ai découvert il y a quelques temps, et qui sont très pratiques pour sortir des chiffres.
 

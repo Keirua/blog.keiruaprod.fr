@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Bonnes pratiques
+lang: fr
 ---
 C&rsquo;est bientôt Noël. Et si vous vous faisiez le cadeau d&rsquo;apprendre quelque chose de radicalement nouveau, comme un nouveau langage de programmation ?
 

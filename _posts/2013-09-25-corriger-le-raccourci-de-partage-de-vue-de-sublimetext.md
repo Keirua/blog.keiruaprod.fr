@@ -20,6 +20,7 @@ tags:
   - configuration
   - Sublime Text
   - SublimeText
+lang: fr
 ---
 Une fonctionnalité très sympa de Sublime Text est pouvoir partager son écran en 2 (**View -> Layout -> Columns: 2** par exemple).
 

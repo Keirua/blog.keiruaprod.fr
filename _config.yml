@@ -18,7 +18,7 @@ email: clement@keiruaprod.fr
 description: >-
   Techical blog related to www.keiruaprod.fr
   Freelance web development, symfony, python, rust, remote
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/"
 url: "https://blog.keiruaprod.fr" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: clemkeirua
 github_username:  keirua

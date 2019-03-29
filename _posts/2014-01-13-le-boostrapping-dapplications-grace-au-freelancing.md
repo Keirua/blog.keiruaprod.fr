@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Entreprenariat
+lang: fr
 ---
 <span style="line-height: 1.5em;">J&rsquo;ai assisté cette semaine au <a title="ParisRb" href="http://www.meetup.com/parisrb/">meetup ParisRb</a>. J&rsquo;ai fait plusieurs meetups récemment (j&rsquo;aime voir l&rsquo;évolution du web depuis des angles différents), et j&rsquo;ai beaucoup aimé celui-ci. Des sujets variés (certains techniques, d&rsquo;autres moins), un endroit sympa (dans les locaux de Google) et pas mal de monde (dans les 250 personnes). </span>Ha, et tout meetuper vous le dira : le buffet, ça compte, et celui-ci était sympa. Et les présentations ? Dans une première partie plusieurs lightning talks, puis on mange/discute, puis 3 conférences de 20 minutes. Bref un format sympa qui fait qu&rsquo;on ne s&rsquo;ennuie pas trop quand un talk spécifique ne nous intéresse absolument pas, qui permet de voir des choses variées et de rentrer quand même dans les détails tout en rencontrant pas mal de monde. Bref, même si je ne fais pas de ruby, c&rsquo;est un meetup où je reviendrais !
 

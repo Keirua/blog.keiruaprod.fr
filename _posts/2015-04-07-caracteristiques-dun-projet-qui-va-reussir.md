@@ -18,6 +18,7 @@ categories:
 tags:
   - agile
   - gestion de projet
+lang: fr
 ---
 J&rsquo;ai eu l&rsquo;occasion de participer à plusieurs projets, le plus souvent de développement. Ils ont eu des durées et des importances variées. Certains se sont cassés la figure d&rsquo;une manière ou d&rsquo;une autre, et d&rsquo;autres se sont très bien passés. Ces expériences m&rsquo;ont permis de constater quelques unes des caractéristiques de projets qui marchent bien. Cela n&rsquo;est pas valable que pour du développement, cela marche pour vraiment n&rsquo;importe quel type de projet.
 

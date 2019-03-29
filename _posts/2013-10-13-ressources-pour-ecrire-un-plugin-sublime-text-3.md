@@ -18,6 +18,7 @@ tags:
   - python
   - st3
   - sublime text 3
+lang: fr
 ---
 La semaine dernière, j&rsquo;ai réécrit pour Sublime Text 3 l&rsquo;extension FormatSQL, qui me servait régulièrement dans la version 2, mais qui n&rsquo;est plus compatible. L&rsquo;objectif : prendre une chaine SQL mal formatée, et la formater de manière lisible. Le code final de mon petit plugin est [sur Github](https://github.com/Keirua/stsqlformat).
 

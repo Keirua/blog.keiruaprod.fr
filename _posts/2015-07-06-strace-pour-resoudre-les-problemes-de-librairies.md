@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Astuce
+lang: fr
 ---
 La semaine dernière, j&rsquo;ai eu un problème avec un exécutable, celui de wkhtmltopdf qui n&rsquo;arrivait pas à générer de PDF et le log n&rsquo;était pas clair. D&rsquo;après certaines indications sur StackOverflow, ca pouvait être du à un problème de version de la librairie libjpeg. On peut le vérifier avec strace, c&rsquo;est un utilitaire qui intercepte et loggue tous les appels systèmes, ce qui permet de voir ce qui se passe en fouillant dans les logs. Je ne connaissais pas cet outil, c&rsquo;était une bonne occasion de découvrir.
 

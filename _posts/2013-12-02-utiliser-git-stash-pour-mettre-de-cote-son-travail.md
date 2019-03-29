@@ -21,6 +21,7 @@ tags:
   - git stash
   - stash
   - versionning
+lang: fr
 ---
 Bien que j&rsquo;utilise git depuis un bon moment, j&rsquo;ai longtemps été effrayé par l&rsquo;usage de **git stash**, par peur de perdre du travail. A tort, car elle se révèle finalement très simple d&rsquo;utilisation, et très pratique. Cette commande (to stash = réserver) permet de mettre de côté toutes les modifications en cours sans les commiter, pour pouvoir les reprendre plus tard.
 

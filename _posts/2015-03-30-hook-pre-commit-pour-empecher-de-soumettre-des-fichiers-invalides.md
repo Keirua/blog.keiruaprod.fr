@@ -14,6 +14,7 @@ tags:
   - git
   - hook
   - Php
+lang: fr
 ---
 Il est facile d&rsquo;ajouter des fichiers invalides dans un système de contrôle de version si on ne fait pas attention. Un des moyens d&rsquo;éviter ça, c&rsquo;est d&rsquo;utiliser les hooks de git.
 

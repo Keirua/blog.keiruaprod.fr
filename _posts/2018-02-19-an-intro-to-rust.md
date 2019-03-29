@@ -11,6 +11,7 @@ robotsmeta:
   - index,follow
 categories:
   - Rust
+lang: en
 ---
 I recently gave an introductory talk about the [Rust language](https://www.rust-lang.org), to experienced programmers who did not know the language. The presentation can be seen [here](http://htmlpreview.github.io/?https://github.com/Keirua/rust-intro/blob/master/index.html) and downloaded [on Github](https://github.com/Keirua/rust-intro/). This article is a short summary of what I described.
 

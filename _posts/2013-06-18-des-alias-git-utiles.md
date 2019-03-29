@@ -13,6 +13,7 @@ categories:
 tags:
   - alias
   - git
+lang: fr
 ---
 Depuis quelques temps, j&rsquo;utilise les alias git pour un certain nombre de taches récurrentes, pour lesquelles je trouve les commandes de bases peu performantes, trop longues à taper, ou parce que je préfère ne pas retenir les nombreuses options qu&rsquo;elles proposent. Autre avantage : les alias décrits dans le fichier **.gitconfig** apparaissent dans l&rsquo;autocompletion de git, ce qui n&rsquo;est pas les cas si l&rsquo;on fait un alias bash. 
 

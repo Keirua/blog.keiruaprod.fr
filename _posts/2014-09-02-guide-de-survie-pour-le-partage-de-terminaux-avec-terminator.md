@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Astuce
+lang: fr
 ---
 [<img src="http://blog.keiruaprod.fr/wp-content/uploads/2014/09/terminator-300x139.png" alt="terminator" width="300" height="139" class="alignright size-medium wp-image-734" srcset="http://blog.keiruaprod.fr/wp-content/uploads/2014/09/terminator-300x139.png 300w, http://blog.keiruaprod.fr/wp-content/uploads/2014/09/terminator-1024x476.png 1024w, http://blog.keiruaprod.fr/wp-content/uploads/2014/09/terminator.png 1306w" sizes="(max-width: 300px) 100vw, 300px" />](http://blog.keiruaprod.fr/wp-content/uploads/2014/09/terminator.png)Il y a quelques semaines, mon collègue [tilap](http://www.tilap.net) écrivait [un article sur l&rsquo;utilisation de screen](http://tilap.net/ubuntu-splitter-fenetres-terminal-screen/) partager un terminal en plusieurs.
 

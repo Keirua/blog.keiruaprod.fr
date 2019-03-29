@@ -11,6 +11,7 @@ robotsmeta:
 categories:
   - Entreprenariat
   - Non classé
+lang: fr
 ---
 Un des problèmes majeurs de l&rsquo;entreprise, c&rsquo;est l&rsquo;engagement de ses employés. Souvent, dans une entreprise, les gens sont motivés lorsqu&rsquo;ils prennent un poste, mais rapidement de nombreuses contraintes et barrières les empêchent de mettre en oeuvre les bonnes idées qu&rsquo;ils peuvent avoir. Rapidement, ils finissent alors par faire comme tout le monde, « faire leurs heures » et attendre de rentrer chez eux pour commencer leur vie.
 

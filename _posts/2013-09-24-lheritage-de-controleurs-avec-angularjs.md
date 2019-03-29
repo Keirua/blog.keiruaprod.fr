@@ -25,6 +25,7 @@ tags:
   - héritage
   - inheritance
   - javascript
+lang: fr
 ---
 Lorsque l&rsquo;on souhaite écrire du code concis, l&rsquo;héritage permet de gagner du temps en factorisant le code dans une classe dont plusieurs vont hériter, et se partager les fonctionnalités.
 

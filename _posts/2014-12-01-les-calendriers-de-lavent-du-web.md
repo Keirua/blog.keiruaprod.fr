@@ -10,6 +10,7 @@ robotsmeta:
   - index,follow
 categories:
   - Développement Web
+lang: fr
 ---
 Nous sommes aujourd&rsquo;hui le premier décembre. Comme tous les ans, c&rsquo;est le premier jour des calendriers de l&rsquo;avent. Sur le web, de nombreux calendriers virtuels en profitent pour parler du web sur un principe simple : **un jour = un article**. Les articles sont généralement écrits par des auteurs de tous bord, et c&rsquo;est l&rsquo;occasion de découvrir de nombreux sujets.
 

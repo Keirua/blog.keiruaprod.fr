@@ -20,6 +20,7 @@ tags:
   - checkbox
   - checklist-model
   - directive
+lang: fr
 ---
 Gérer les cases à cocher avec **[angularJS](https://angularjs.org/ "AngularJS")** est un peu plus compliqué que les autres associations. On ne peut pas simplement utiliser ng-model, il faut gérer la possibilité que plusieurs cases soient cochées et cela nécessite d&rsquo;implémenter cette logique métier.
 
