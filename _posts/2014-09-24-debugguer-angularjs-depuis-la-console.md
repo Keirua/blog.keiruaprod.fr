@@ -21,6 +21,7 @@ tags:
   - AngularJS
   - debug
   - javascript
+archived: true
 lang: fr
 ---
 Quelques astuces testées sur le terrain pour débugguer une application angularJS sans quitter le navigateur.

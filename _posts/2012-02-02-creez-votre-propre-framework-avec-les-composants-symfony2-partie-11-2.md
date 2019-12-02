@@ -6,6 +6,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=297
 permalink: /2012/02/02/creez-votre-propre-framework-avec-les-composants-symfony2-partie-11-2/
+archived: true
 categories:
   - Développement Web
   - Javascript

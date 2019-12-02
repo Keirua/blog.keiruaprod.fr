@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=354
 permalink: /2012/05/08/intro-a-backbone-js-1-les-vues/
+archived: true
 keywords:
   - Backbone.js, Backbone.view, MVC, template, underscore, jquery
 description:

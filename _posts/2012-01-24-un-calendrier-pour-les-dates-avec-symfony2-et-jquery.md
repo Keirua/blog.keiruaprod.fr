@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=246
 permalink: /2012/01/24/un-calendrier-pour-les-dates-avec-symfony2-et-jquery/
+archived: true
 keywords:
   - Formulaires, jQuery, jQuery-UI, Symfony2, JavaScript
 description:

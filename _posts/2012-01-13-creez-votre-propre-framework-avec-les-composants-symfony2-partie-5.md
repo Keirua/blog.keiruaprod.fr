@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=129
 permalink: /2012/01/13/creez-votre-propre-framework-avec-les-composants-symfony2-partie-5/
+archived: true
 keywords:
   - controleur, Request, Response, Routing, Symfony2
 description:

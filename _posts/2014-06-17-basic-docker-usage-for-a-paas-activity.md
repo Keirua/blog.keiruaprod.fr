@@ -14,6 +14,7 @@ robotsmeta:
 categories:
   - Astuce
 lang: fr
+archived: true
 ---
 I wrote this article a while ago. Instead of letting it sink on my hard drive, the [release of docker 1.0](http://blog.docker.com/2014/06/its-here-docker-1-0/ "Docker 1.0 release") is a good opportunity to let people know how easy getting started is. There might be some better solutions for many things, since stuff have evolved a lot in the last months, but you can see this article as an introduction to what docker is and how it works.
 

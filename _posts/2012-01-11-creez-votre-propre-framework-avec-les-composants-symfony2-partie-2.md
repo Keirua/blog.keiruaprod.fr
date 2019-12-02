@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=91
 permalink: /2012/01/11/creez-votre-propre-framework-avec-les-composants-symfony2-partie-2/
+archived: true
 keywords:
   - Framework web, HttpFoundation, Symfony2
 description:

@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=136
 permalink: /2012/01/14/creez-votre-propre-framework-avec-les-composants-symfony2-partie-6/
+archived: true
 keywords:
   - controleur, Framework, HttpKernel, Symfony2
 description:

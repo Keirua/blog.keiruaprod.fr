@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=67
 permalink: /2011/12/02/symblog-partie-4-commentaires-et-migrations-de-bases-de-donnees-2/
+archived: true
 keywords:
   - ' Doctrine, Intégration continue, Symblog, Symfony2'
 description:

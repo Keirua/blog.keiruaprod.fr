@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=363
 permalink: /2012/05/09/intro-a-backbone-js-2-les-evenements/
+archived: true
 keywords:
   - Backbone.js, backbone, javascript, mvc, évènement, event
 description:

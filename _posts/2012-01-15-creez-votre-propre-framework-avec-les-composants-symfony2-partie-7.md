@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=143
 permalink: /2012/01/15/creez-votre-propre-framework-avec-les-composants-symfony2-partie-7/
+archived: true
 keywords:
   - controleur, Refactoring, Symfony2
 description:

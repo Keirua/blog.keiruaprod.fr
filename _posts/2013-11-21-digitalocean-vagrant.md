@@ -11,6 +11,7 @@ robotsmeta:
 categories:
   - Non classé
 lang: fr
+archived: true
 ---
 Depuis quelques temps, j&rsquo;ai un serveur chez [DigitalOcean](https://www.digitalocean.com/), qui me sert principalement pour bricoler des petites applis, et jouer autour de nouvelles technos. DigitalOcean m&rsquo;a séduit par le rapport pricing/résultat. Même s&rsquo;il y a des choses à redire, où s&rsquo;il existe des offres similaires moins chères, je suis très satisfait de pouvoir créer/détruire des machines virtuelles en 2 clics. Cela correspond en fait totalement à mon cas d&rsquo;utilisation, qui consiste à monter une machine pour tester une techno, bidouiller dessus, et la détruire quand j&rsquo;ai fait le tour de ce que je voulais voir.
 

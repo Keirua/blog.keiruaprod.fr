@@ -8,6 +8,7 @@ guid: http://keiruaprod.fr/blog/?p=468
 permalink: /2012/08/08/prefixer-une-table-doctrine-avec-symfony2/
 robotsmeta:
   - index,follow
+archived: true
 categories:
   - Développement Web
   - Symfony2

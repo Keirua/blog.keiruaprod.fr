@@ -18,6 +18,7 @@ categories:
   - Astuce
   - Bonnes pratiques
   - Javascript
+archived: true
 tags:
   - AngularJS
   - controleur

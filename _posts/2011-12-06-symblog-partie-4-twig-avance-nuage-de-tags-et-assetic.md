@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=71
 permalink: /2011/12/06/symblog-partie-4-twig-avance-nuage-de-tags-et-assetic/
+archived: true
 keywords:
   - Assetic, Doctrine, Symblog, Symfony2, Twig
 description:

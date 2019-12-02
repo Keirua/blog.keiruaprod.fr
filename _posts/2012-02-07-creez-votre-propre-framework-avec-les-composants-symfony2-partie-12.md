@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=302
 permalink: /2012/02/07/creez-votre-propre-framework-avec-les-composants-symfony2-partie-12/
+archived: true
 description:
   - "Tutoriel sur la création d'un framework avec les composants Symfony2"
 robotsmeta:

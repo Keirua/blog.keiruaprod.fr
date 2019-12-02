@@ -11,6 +11,7 @@ robotsmeta:
 categories:
   - Astuce
 lang: en
+archived: true
 ---
 I&rsquo;m using [Markdown](http://daringfireball.net/projects/markdown/) as a markup syntax for many things: the syntax is indeed really simple to use, it lets me focus on the content I need to write, and it can later be converted to HTML for « real life » display once I&rsquo;m done. In the open-source community, it has become largely spread, and many developpers use it, like me, for non code-related stuff, like keeping notes or writing their journal. <!--more-->
 

@@ -13,6 +13,7 @@ description:
   - Les checkboxes avec AngularJS
 robotsmeta:
   - index,follow
+archived: true
 categories:
   - AngularJS
 tags:

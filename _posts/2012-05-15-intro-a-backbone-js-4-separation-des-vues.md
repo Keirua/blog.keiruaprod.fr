@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=379
 permalink: /2012/05/15/intro-a-backbone-js-4-separation-des-vues/
+archived: true
 keywords:
   - Backbone.js, Backbone.view, javascript
 description:

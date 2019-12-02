@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=76
 permalink: /2011/12/15/symblog-partie-6-tests-unitaires-et-fonctionnels-avec-phpunit/
+archived: true
 keywords:
   - PHPUnit, Symblog, Symfony2, Tests fonctionnels, Tests unitaires
 description:

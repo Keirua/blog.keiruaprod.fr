@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=45
 permalink: /2011/11/25/traduction-de-symblog/
+archived: true
 keywords:
   - Symblog, Symfony2, blog
 description:

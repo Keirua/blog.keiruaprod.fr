@@ -6,6 +6,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=1
 permalink: /2011/11/07/bonjour-tout-le-monde/
+archived: true
 robotsmeta:
   - index,follow
 categories:

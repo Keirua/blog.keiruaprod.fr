@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=226
 permalink: /2012/01/23/creez-votre-propre-framework-avec-les-composants-symfony2-partie-9/
+archived: true
 keywords:
   - Design pattern, Framework, Observer, Symfony2
 description:

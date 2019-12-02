@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=115
 permalink: /2012/01/12/creez-votre-propre-framework-avec-les-composants-symfony2-partie-4/
+archived: true
 keywords:
   - Framework, Routing, Symfony2
 description:

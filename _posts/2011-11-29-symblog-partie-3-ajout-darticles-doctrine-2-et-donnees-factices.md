@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=59
 permalink: /2011/11/29/symblog-partie-3-ajout-darticles-doctrine-2-et-donnees-factices/
+archived: true
 keywords:
   - Doctrine, Fixtures, Symblog, Symfony2
 description:

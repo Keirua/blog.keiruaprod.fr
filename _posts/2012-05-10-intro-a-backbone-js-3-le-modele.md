@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=372
 permalink: /2012/05/10/intro-a-backbone-js-3-le-modele/
+archived: true
 keywords:
   - Backbone.js, backbone, model, Backbone.Model, MVC, Javascript
 description:

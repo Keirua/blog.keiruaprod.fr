@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=421
 permalink: /2012/07/26/redirection-apres-login-sous-symfony2/
+archived: true
 keywords:
   - Php, symfony2, FOSUserBundle, redirection, event
 description:

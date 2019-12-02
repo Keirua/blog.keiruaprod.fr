@@ -7,6 +7,7 @@ author: Keirua
 layout: post
 guid: http://keiruaprod.fr/blog/?p=387
 permalink: /2012/05/18/intro-a-backbone-js-5-modifiersupprimer-des-elements/
+archived: true
 description:
   - "Ajout de fonctionnalités pour la modification/suppression d'éléments à notre application d'apprentissage de Backbone.js"
 robotsmeta:
