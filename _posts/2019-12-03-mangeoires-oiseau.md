@@ -22,7 +22,8 @@ En une heure de découpe et clouage, j'avais mon assemblage: 2 mangeoires plates
 
 C'est loin d'être parfait (certains clous et tiges auraient pû être mieux mis), mais ça a le mérite d'être utilisable, et ne pas chercher à faire des trucs parfaits est à la fois un bon exercice de lâcher prise et un bon moyen de terminer des trucs.
 
-Les oiseaux − des mésanges charbonnières, comme j'ai pu l'apprendre grâce à BirdLab − se sont timidement posés le premier jour, puis sont venus de plus en plus souvent, et de plus en plus nombreux. 15 jours plus tard, ils sont environ 7 à passer leurs journées dans l'arbre à coté, et même quand je remplis les mangeoires abondamment, ils mangent tout en quelques jours.
+Les oiseaux qui viennent sont des [mésanges charbonnières](https://fr.wikipedia.org/wiki/M%C3%A9sange_charbonni%C3%A8re). J'ai pu l'apprendre grâce à BirdLab.
+Elles se sont timidement posés le premier jour, puis sont venus de plus en plus souvent, et de plus en plus nombreux. 15 jours plus tard, ils sont environ 7 à passer leurs journées dans l'arbre à coté, et même quand je remplis les mangeoires abondamment, ils mangent tout en quelques jours. J'ai fini par peser ce que je leur donne: 250 à 300g de graines sont consommées toutes les 48h ! Moi qui pensait que mes 2.5kg de graines allaient durer tout l'hiver.
 
 ![](/assets/pictures/mangeoires/assemblage.jpg)
 ![](/assets/pictures/mangeoires/graines.jpg)
