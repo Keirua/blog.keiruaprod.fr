@@ -79,7 +79,19 @@ Le système doit être conçu de telle manière à ce que les profils de mouveme
 
 ### 9 Non-liabilité
 
-La conception de la génération de ces identifiants temporaires doit être telle que ces identifiants ne puissent pas être interprétées et liées sans connaissance d'une clé privée controllée par les utilisateurs. Ils ne doivent de ce fait pas être dérivés à partir d'une information identifiant l'utilisateur, directement ou indirectement. Indépendemment du fait que les 
+La conception de la génération de ces identifiants temporaires doit être telle que ces identifiants ne puissent pas être interprétées et liées sans connaissance d'une clé privée controllée par les utilisateurs. Ils ne doivent de ce fait pas être dérivés à partir d'une information identifiant l'utilisateur, directement ou indirectement. Indépendemment du fait que les identifiants sont communiqués lors d'une infection, il doit être exclus que les données collectées de «suivi de contact» puissent être chainées sur de longues périodes de temps.
+
+### 10 Non observabilité des communications
+
+Même si la transmission d'un message est observée à travers le système (c'est à dire à partir des métadonnées de communication), il ne doit pas être possible de conclure qu'une personne est infectée ou qu'elle a eu des contacts avec des personnes infectées. Il faut s'en assurer à la fois vis-à-vis des autres utilisateurs, de l'infrastructure, des opérateurs du réseau et des attaquant qui auraient pénétré dans ces systèmes.
+
+## Rôle du CCC
+
+Depuis plus de 30 ans, le CCC s'est engagé dans un travail volontaire à l'intersection de la technologie et de la société. Nos principes éthiques sont de défendre la vie privée, la décentralisation et l'économie de la donnée − et de lutter contre toute forme de surveillance et de contrainte.
+
+Sans affirmer être exhaustifs, dans cet article nous donnons les prérequis minimum en matière de vie privée que doit avoir une «appli Corona» afin d'être socialement et technologiquement tolérable par tous. Le CCC ne fournira jamais, dans aucune circonstance, une approbation, une recommandation, un certificat ou un test d'une implémentation concrète.
+
+Cette responsabilité incombe aux développeurs des systèmes de suivi de contact qui devront prouver qu'ils respectent ces prérequis ou les faire vérifier par des tiers indépendants.
 
 
 
