@@ -7,7 +7,7 @@ lang: fr
 
 Cet article est la traduction d'[un article du 6 avril 2020](https://www.ccc.de/en/updates/2020/contact-tracing-requirements) écrit par le [Chaos Computer Club](https://en.wikipedia.org/wiki/Chaos_Computer_Club) sur les conditions que devraient respecter une application de suivi de contact dans le cadre du Covid-19. Les experts de la surveillance − [Tristan Nitot](https://standblog.org/blog/post/2020/04/08/Covid-19-et-la-surveillance), [Olivier Tesquet](https://twitter.com/oliviertesquet/status/1247823274597404672), [Amaelle Guiton](https://twitter.com/amaelle_g/status/1247928366621167616)… − constatent tous la même chose. Les idées évoluent vite dans l'esprit du public et du gouvernement dans ce qu'il est tolérable d'accepter de changer pour sortir au plus vite de la crise sanitaire, et les risques de dérive sont majeurs. Si nous devons aller dans la direction d'une telle application, il faudra être très vigilant pour ne pas avancer un grand coup et dans la durée vers une société où la surveillance est encore plus marquée qu'aujourd'hui.
 
-Les remarques du CCC me paraissent donc essentielles et j'aimerais qu'un maximum de gens les aient en tête au cours des discussions qui, en fait, ont déja démarré. Voici la traduction, l'[original est ici](https://www.ccc.de/en/updates/2020/contact-tracing-requirements).
+Les remarques du CCC me paraissent donc essentielles et j'aimerais qu'un maximum de gens les aient en tête au cours des discussions qui, en fait, ont déja démarré. Voici la traduction, l'[original est ici](https://www.ccc.de/en/updates/2020/contact-tracing-requirements). Ce texte étant open source ([là](https://github.com/Keirua/blog.keiruaprod.fr/)), vous pouvez suggérer des améliorations.
 
 <hr />
 
@@ -15,7 +15,7 @@ Les «applications Corona» sont sur les lèvres de tout le monde comme un moyen
 
 Actuellement, le «suivi de contact» supporté par la technologie est considéré comme un moyen de lutter contre la diffusion du SARS-CoV-2 d'une manière plus ciblée (ndt: que par le confinement global). L'idée générale est de permettre une plus grande liberté de mouvement pour la majorité de la société à travers un suivi et une interruption rapide des chaines d'infection. Les contacts des personnes infectées devraient être alertées plus rapidement et ainsi pouvoir se mettre en quarantaine plus rapidement. Cela permet, ensuite, de prévenir les avancées des contaminations. Une «appli Corona» ne nous protègerait ni nous, ni nos contacts: elle serait conçue pour casser des chaines d'infection en protégeant les contacts de nos contacts.
 
-## Le suivi des contacts comme une technologie risquée
+## Le suivi des contacts est une technologie risquée
 
 Il y a un grand nombre de suggestions pour l'implémentation technique de ce concept. Ces propositions vont de systèmes dystopiques de surveillance totale à des méthodes ciblées, complètement anonymes pour alerte des personnes potentiellement infectées sans connaitre spécifiquement qui que ce soit.
 
@@ -31,7 +31,7 @@ Le prérequis de base est que le «suivi de contact» peut réellement aider sig
 
 L'application et toutes les données collectées doivent être utilisées exclusivement pour combattre les chaines d'infection du SARS-CoV-2. Tout autre usage doit être empêché techniquement aussi loin que possible et être interdit légalement.
 
-### 2 Volontariat et liberté envers les discriminations
+### 2 Volontariat et liberté, pas de discriminations
 
 Pour une efficacité épidémiologique significative, une appli de «suivi de contact» nécessite un haut degré de dissémination dans la société. Cette large distribution ne doit pas être accomplie par la force, mais seulement en mettant en oeuvre un système de confiance qui respecte la vie privée. Dans cette optique, il ne doit pas y avoir de barrière par des tarifs ainsi qu'aucune incitation financière à l'usage.
 
@@ -39,7 +39,7 @@ Les gens qui refusent d'utiliser l'application ne doivent pas subir de conséque
 
 L'application doit régulièrement informer les gens de son fonctionnement. Elle doit permettre simplement d'être temporairement désactivée ou supprimée de manière permanente. Les mesures restrictives, par exemple de type «bracelet électronique», pour controller l'application des restrictions de contact, ne doivent pas être implémentées.
 
-### 3 Vie privée fondamentale
+### 3 La vie privée est fondamentale
 
 C'est seulement avec un concept convaincant basé sur le principe de vie privée que l'acceptation sociale pourra être obtenue.
 
@@ -77,7 +77,7 @@ Les identifiants pour les suivi de contact par des technologies sans fil (par ex
 
 Le système doit être conçu de telle manière à ce que les profils de mouvement (suivi de localisation) ou les profils de contacts (motifs des contacts fréquents qui permettent de remonter à des personnes spécifiques) ne puissent être établis, intentionnellement ou non. Des méthodes tel que la centralisation de données GPS ou de localisation, ou lier les données à des numéros de téléphone, des comptes sur les réseaux sociaux et autres doivent donc être rejetés par principe.
 
-### 9 Non rapprochement
+### 9 Non rapprochement des détails techniques aux données personnelles
 
 La conception de la génération de ces identifiants temporaires doit être telle que ces identifiants ne puissent pas être interprétés et liés sans connaissance d'une clé privée controllée par les utilisateurs. Ils ne doivent de ce fait pas être dérivés à partir d'une autre information identifiant l'utilisateur, directement ou indirectement. Indépendemment du fait que les identifiants sont communiqués lors d'une infection, il doit être exclus que les données collectées de «suivi de contact» puissent être chainées sur de longues périodes de temps.
 
