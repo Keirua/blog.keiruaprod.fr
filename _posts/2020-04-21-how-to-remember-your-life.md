@@ -7,13 +7,13 @@ lang: en
 
 I'm currently sorting through things. Photos, old articles I wrote a long time ago. Here is one I never published.
 
-The question of "How to remember your life" came up in this video: https://www.youtube.com/watch?time_continue=7&v=GLy4VKeYxD4
+The question of "How to remember your life" came up in [this video](https://www.youtube.com/watch?time_continue=7&v=GLy4VKeYxD4).
 
 I too fear to forget life, so I was curious about what this guy does.
 
 # Photos
 
-The problem is simple: we remember things we often need (you can surely give me your phone number without thinking about it), but it's incredibly hard to remember distant things (when was the last time you've seen a hamster?). Many pieces of information lie somewhere in our memory, but they are buried so deep that we are aware of it anymore. However, if we can trigger a small amount of this memory, we'll be able to remember all of it.
+The problem is simple: we remember things we often need (you can surely give me your phone number without thinking about it), but **it's incredibly hard to remember distant things** (when was the last time you've seen a hamster?). Many pieces of information lie somewhere in our memory, but they are buried so deep that we are aware of it anymore. However, if we can trigger a small amount of this memory, we'll be able to remember all of it.
 
 Today, we have an excellent way to trigger our memory: the many pictures we take on our phone. But that's too much, and keeping them on your phone is not an active way of organizing your memories. The author's solution is instead to do this:
 
