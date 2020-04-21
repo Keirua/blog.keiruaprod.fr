@@ -1,0 +1,13 @@
+
+Security vocabulary
+
+Let's dive through some of the vocabulary you may encounter during you exploration of the #infosec world.
+
+ - **black hat/white hat** hackers: black hat hackers are considered to use hacking techniques for evil purpose (making money, gathering sensitive information, blackmailing…) while white hat people (like me) use those techniques for good (teaching people and teams, protecting/assessing infrastructures…). Btw, I have far too little expertise to consider myself a hacker, but enough to teach you a few useful things.
+ - **red team/blue team**: there are different ways to protect a system. "Blue team" techniques are defensive ones, while "red team" are offensive (the same as the one used by the bad guys). Usually, people have at least notions in the 2 area, since it's better to know what the other side can do in order to bypass it, or to protect against it. Typical blue team jobs: security analist, forensic analyst, incident responder, malware analyst…
+ Typical red team jobs: pentester, vulnerability researcher
+ - **pentest**: an authorized attack on a system in order to assess its vulnerabilities by gaining access to a (normally) unauthorized area. It can be a computer system (a server, a network of servers…), or a physical infrastructure (then, the goal is often to gain a physical access to an unauthorized area: the servers' room, or the CEO's office).
+  - **attack surface**: all the entry points a user can use to gain access to something it is not supposed to. It can be all places where an input is possible when it comes to fuzzing, or all the tools, pages and services in the case of a pentest
+ - **threat model**: a tool to understand and communicate the threats and their possible mitigations. Various methodologies exist, the basic idea is to be aware of the risks, what the protections are and how far the system is protected against them
+ - **enumeration**: the act of listing stuff ;) it is a frequent operation, whose purpose is to gather information for usage during the pentest. Stuff that are commonly enumerated are: servers, domains and subdomains, usernames, open ports, available services + their version number, data locations…
+ - **privilege escalation**: the act of using any mean to gain a bit more privileges than previously. The ultimate goal is to gain root access, which will give access to everything on a server. It is not always necessary: if you want to access the content of the database, you may be able to dump it without being root. You can think of it like a heist: someone enters through a window, so he has access to more things than the outside. From this room, he goes to another room, where again he can do more things. And so on, until the thief reaches the jewels.

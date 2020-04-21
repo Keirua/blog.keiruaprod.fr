@@ -1,0 +1,10 @@
+Software security covers a wide range of topics. In order to understand complex issues, you need to have a good understanding of how things work. What do you need to know exactly? Here are some of the basics that will help you all the time during many of your analysis:
+
+ - Linux fundamentals: file system, basic commands and common tools, processes, user management, network
+ - Networking and cryptography: The different protocol stacks (IP, TCP/UDP, HTTP, wireless protocols, DNS…), common practices (VPN, firewalls), cryptography techniques. Do cryptopals (http://cryptopals.com/), read crypto101.io
+ - Web security fundamentals: OWASP Top 10 is a great place to start (https://www.owasp.org/index.php/Top_10-2017_Top_10), The Web Application Hacker's handbook is a great complement (http://mdsec.net/wahh/).
+ - Programming. Get comfortable with an easy scripting langage like Python or Ruby that you can use to automate stuff. Learn to read C and assembly. Get notions of low-level programming (registers, stack…)
+ - Reverse engineering and binary exploitation: Learn to decompile a binary and use a debugger. Learn what are buffer overflows, heap overflows etc. The art of Exploitation is a great resource (https://nostarch.com/hacking2.htm). You can train with Narnia http://overthewire.org/wargames/narnia/
+ - Basic forensics: Filesystems, data recovery, scanning logs and network captures. Learn Wireshark, tcpdump, learn to use a proxy.
+
+Those are basic stuff, and is list is disputable of course. You may not need some items, but you may need to go much deeper in some categories. If you're into malware analysis, no need to have a great understanding of the web security issues. However, you may need to learn how systems like Windows work. If you go down the IoT route, you'll probably need to know different protocols. If you are into web stuff, binary exploitation won't be very useful. But those are basic notions that will give you a broader understanding of how things work together. Consider this as a wishlist of things you may need to have a good grasp on if you are considering getting into security things.

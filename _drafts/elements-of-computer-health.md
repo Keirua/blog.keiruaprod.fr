@@ -1,0 +1,13 @@
+We often spend 8 hours a day in front of a screen so a few months ago I started to learn how to minimize its impact on my health. You can easily do many of those as well.
+
+    I switched to a vertical mouse. Regular mouses tend to favor Repetitive Strain Injuries (RSI), which a significant problem in the long term. Muscular tensions and the risk of carpal tunnel syndrome are reduced with a vertical mouse due to the way it puts your arm muscles. No famous brand sell quality vertical mouses for a decent price, so I had to pick one with an unknown brand. It is effortless to get used to a vertical mouse: plug it, use it a bit, and soon you'll forget you are not using a classic mouse. I wouldn't go back.
+    I switched to an 80% keyboard. It is 80% the size of a regular one. There is no numeric pad. The idea is not to require your shoulder to make an effort to reach the mouse. Since the mouse is on the side an not in front of the shoulder with a "100%", merely reaching for the mouse requires an effort.
+    I learned an alternative keyboard layout (https://deskthority.net/wiki/Alternative_keyboard_layouts). Bépo is an alternative to Azerty, the French layout. If you use Qwerty, you can replace it with Dvorak. Even though the health benefits are not proven, it requires fewer efforts to type common letters, and I have learned to touch type which is making me a faster typer, so that's a bit better.
+    I've setup redshift(http://jonls.dk/redshift/) (you can use f.lux https://justgetflux.com/ on mac and windows). At night, it changes the color of the screen for more red, to reduce the impact of blue light that disturb sleep (through melatonin regulation). It's weird at first, but after a few days, it's okay. Today I fall asleep faster, and I can feel the difference with screens without this.
+    I bought an extra monitor. A large monitor is necessary not to have to make efforts to read small texts. It also has to be at eye level to not have to look down, which strains the neck. If you can't afford a monitor (because it's expensive, or because there is no space available, or maybe because you're out), you can mitigate this with a laptop stand. Mine is a 10 or 15cm high cardboard box!
+
+Some things did not work out though. Sitting for too long has been dubbed "the new cigarette," because of its terrible effects on heart problems, so this needs to be taken care of. I tried to use Pomodoro techniques to exercise and get away from my desk regularly. I've found the cycles to be too fast, and I could not manage to get in the zone properly. Learning to take more breaks and exercise more often is the next steps for me.
+
+
+Also: 2 monitors or one extra wide?y
+https://keenethics.com/blog/1497078000000-two-monitors-or-one-ultrawide
