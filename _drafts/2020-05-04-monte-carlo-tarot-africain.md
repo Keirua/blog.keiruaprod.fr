@@ -1,17 +1,19 @@
 ---
-title: Monte Carlo Tarot Africain
+title: Probabilités de victoire au Tarot Africain avec la méthode de Monte Carlo
 author: Keirua
 layout: post
 lang: fr
 ---
 
-Pendant le confinement, on ressort les jeux de cartes et dans mon cas, on a ressorti le tarot africain, un jeu d'annonces avec les atouts d'un jeu de tarot. Un des éléments a attiré mon attention: le site en ligne propose une variante que je ne connaissais pas.
+Pendant le confinement, on ressort les jeux de cartes et dans mon cas, on a ressorti le tarot africain, un jeu d'annonces qui se joue avec les atouts d'un jeu de tarot. Il y a beaucoup de variantes de ce jeu, j'ai mis les règles que je connais en annexe.
 
-## Le problème
+Un des éléments a attiré mon attention: le [site du jeu en ligne](https://app.tarot-africain.fr/) propose une variante que je ne connaissais pas.
+
+## Le problème: calculer les probabilités de victoire
 
 Lors de la dernière carte d'un tour, tout le monde pioche une carte parmi les atouts. Les atouts vont du 1 au 21, et une carte particulière, l'excuse, vaut au choix 0 ou 22. On ne voit que sa propre carte.
 
-Dans quel cas faut-il parier qu'on va avoir la carte de rang le plus élevé ?
+**Dans quel cas faut-il parier qu'on va avoir la carte de rang le plus élevé ?**
 
 ![](/assets/pictures/monte-carlo-tarot/tarot-africain-dernier-pli.png)
 
@@ -29,11 +31,14 @@ Ca a l'air un peu trop simple, mais dans plein de situations, trouver une soluti
 
 ## Talk is cheap, show me the code
 
+On va écrire ce programme en python mais on pourrait faire ça avec n'importe quoi (ou presque).
+
+On commence par quelques imports pour se simplifier la vie, principalement:
+
  - `argparse` pour avoir des paramètres cli
- - `numpy`/`pandas` pour l'export csv
+ - `numpy`/`pandas` pour l'export csv et la manipulation de tableaux
  - `matplotlib` pour générer un graphe
 
-Le coeur de l'algorithme, c'est `compute_card_probability`, qui pour valeur de carte fournie en paramètres, va simuler autant de mains que nécessaire et regarder combien de fois la carte demandée est gagnante.
 
 ```python
 import random
@@ -42,7 +47,14 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import argparse
+```
 
+On continue par l'**initialisation** du programme:
+
+ - on configure **argparse** pour aller chercher les paramètres de ligne de commande
+ - on affecte quelques variables à partir de ça
+
+```python
 # what we want to simulate:
 # there are 3 to 5 players
 # each player draws a card, whose value is between 0 and 22
@@ -61,7 +73,13 @@ nb_players = args["players"]
 nb_iterations = args["iterations"]
 
 nb_cards = 22
+```
 
+Le **coeur de l'algorithme** et de ce programme, c'est `compute_card_probability`.
+
+Cette fonction prend en paramètre une valeur de carte. Elle va simuler autant de mains que nécessaire et regarder combien de fois la carte demandée est gagnante, et mettre à jour le tableau `wins` en conséquences.
+
+```python
 wins = np.array([0 for i in range(0, nb_cards+1)])
 
 def compute_card_probability(card_value):
@@ -83,7 +101,13 @@ for card_value in range(0, nb_cards+1):
     compute_card_probability(card_value)
 
 wins = wins/float(nb_iterations)
+```
 
+Fin du programme, on stocke les résultats:
+ - **une courbe** au format PNG
+ - **un fichier CSV** contenant les probabilités calculées
+
+```python
 # draws the plot as an image, and save results as a csv file
 freqs = pd.DataFrame(wins, index=range(0, nb_cards+1), columns=['probability'])
 ax = freqs.plot.bar()
@@ -115,7 +139,7 @@ Hé bien ça dépend du nombre de joueurs.
  - à 4 joueurs, à partir du 18
  - à 5 joueurs, à partir du 19
 
-Je dois avouer que ce qui suit a pas mal bousillé l'intérêt du dernier pli.
+Je dois reconnaitre qu'avec quelques lignes de code on a pas mal bousillé l'intérêt du dernier pli.
 
 ![](/assets/pictures/monte-carlo-tarot/last-see1card-p-3-i-100000.png)
 ![](/assets/pictures/monte-carlo-tarot/last-see1card-p-4-i-100000.png)
@@ -146,3 +170,53 @@ On peut ainsi calculer l'[intervalle de confiance](https://fr.wikipedia.org/wiki
 Parmi les conférences qui m'ont marqué, j'ai beaucoup aimé [Statistics for Hackers](https://www.youtube.com/watch?v=L5GVOFAYi8k) (40mn) ou, plus court, [Statistics without the agonizing pain](https://www.youtube.com/watch?v=5Dnw46eC-0o) (10mn) dont les titres sont explicites: il est question de faire des statistiques avec du code, sans s'embêter avec tout le (nécessaire et expliquable) formalisme mathématique. En raisonnant un peu, dans plein de situations, on peut facilement s'en sortir avec quelques boucles. Ca ressemble à ce qu'on a fait, mais ils proposent des outils un peu différents.
 
 J'ai aussi commencé [Thinking in statistics](http://greenteapress.com/thinkstats2/html/index.html) qui semble prometteur.
+
+## Annexe: les règles du tarot africain
+
+Je ne trouve nulle part de règle précise de ce jeu dans la variante que je connais, donc les voici.
+
+### Préparation
+
+Le jeu se joue à 3, 4 ou 5 joueurs avec les atouts du tarot de 1 à 21 et l'excuse. Les autres cartes servent à compter les «vies» des joueurs: tout le monde commence au Roi. À chaque fois qu'on échoue, on descend d'un rang. Le premier à l'As a perdu.
+
+Pendant une phase de jeu, un seul joueur, toujours le même, distribue les cartes. On enchaine les phases de jeu
+
+Le sens de jeu est le sens des aiguilles d'une montre.
+Le premier joueur à jouer est le joueur à gauche du distributeur.
+A la fin de chaque phase de jeu, c'est au premier joueur de devenir distributeur.
+ 
+### Déroulement d'une phase de jeu:
+ 
+Au **1er tour**:
+ - on distribue 5 cartes à chaque joueur.
+ - les cartes restantes sont mise de côté faces cachées.
+
+Vient ensuite la **phase d'annonces**:
+Puis le joueur à gauche du distributeur annonce le nombre de pli qu'il pense faire. Puis c'est au joueur suivant, puis au troisième joueur. Quand on arrive au quatrième joueur, celui ci doit faire une annonce différente du nombre de plis possibles.
+
+Exemple : Le premier joueur annonce qu'il gagnera 2 plis, le second 0, le 3ème 2. Le total faisant 4 et le nombre de plis possible étant 5, le 4ème joueur ne peut pas annoncer 1 seul pli.
+
+On peut ensuite **jouer les différentes levées**.
+
+En commençant par le joueur à gauche du distributeur, chaque joueur pose une carte de son choix.
+L'excuse est soit la meilleure carte , soit la moins bonne (**mini**). C'est le joueur qui le précise en annoncant **maxi** ou **mini** lorsqu'il pose la carte.
+La carte la plus forte remporte le pli, le joueur qui l'a posée démarre le pli suivant, et ainsi de suite pour toutes les cartes.
+
+A la fin du tour, on fait le **décompte des points**. Ceux qui n'ont pas gagné le nombre de plis qu'ils ont annoncés perdent des vies en conséquence ( différence, en valeur absolu, entre le nombre de plis annoncés et le nombre de plis obtenus).
+
+Exemple :
+
+ - Un joueur annonce 2 plis et en fait 2: il ne perd pas de vie
+ - Un joueur annonce 3 plis et en obtient 2: il perd 1 vie
+ - Un joueur annonce 0 pli et en fait 1: il perd une vie
+
+A la fin du tour, on mélange toutes les cartes (même les cartes qui avaient été mise de côté).
+ 
+Au **2ème tour, 3ème, et 4ème tours**, on distribue respectivement 4, 3 et 2 cartes et effectue les annonces et les levées comme au 1er tour.
+
+Lors du **5ème tour**, on distribue 1 carte à chaque joueur. Il y a 3 manières de faire le tour d'annonces:
+
+ - on regarde sa carte, et on fait l'annonce comme à tous les autres tours
+ - personne ne regarde de carte, et il faut faire l'annonce à l'aveugle
+ - tout le monde met sa carte sur son front. le joueur ne voit donc pas sa propre carte, et doit donc annoncer en fonction des autres
+
