@@ -165,6 +165,65 @@ C'est la [loi des grands nombres](https://fr.wikipedia.org/wiki/Loi_des_grands_n
 
 On peut ainsi calculer l'[intervalle de confiance](https://fr.wikipedia.org/wiki/Intervalle_de_confiance). Tant qu'on atteint pas le degré de confiance recherché, on augmente la taille de l'échantillon.
 
+## Et une solution analytique ?
+
+C'est pas hyper carré, mais dans l'esprit on peut démontrer la relation par récurrence.
+
+### À 2 joueurs.
+
+Supposons que je tire 2 cartes $c_{1}$ et $c_{2}$, $c_{1} \in [0;22]$, $c_{2} \in [0;22] \setminus c_{1}$
+
+$$P(\text{victoire de c1 à 2 joueurs}) = P(c_{1} > c_{2})
+ = \frac{c_{1}}{22}
+$$
+
+### À 3 joueurs.
+
+C'est pareil, on tire 3 cartes cartes $c_{1}$, $c_{2}$, $c_{3}$, $c_{1} \in [0;22]$, $c_{2} \in [0;22] \setminus c_{1}$, $c_{3} \in [0;22] \setminus [c_{1}, c_{2}]$
+
+$$\begin{eqnarray}
+P(\text{victoire de c1 à 3 joueurs}) &=& P(c_{1} > c_{2} \cap c_{1} > c_{3})
+ &=& P(c_{1} > c_{2}) \times P(c_{1} > c_{3})
+ &=& \frac{c_{1}}{22} \times \frac{c_{1}}{22}
+\end{eqnarray}$$
+
+### À n joueurs
+
+On peut généraliser la relation entre *P(victoire de victoire de c1 à n+1 joueurs)* et *P(victoire de victoire de c1 à n joueurs)*, et on obtient:
+
+$$\begin{eqnarray}
+P(\text{victoire de c1 à n joueurs}) &=& P(\underset{i \ne 1}{\cap}{c_{1} > c_{i}})
+ &=& (\frac{c_{1}}{22})^{n-1}
+\end{eqnarray}$$
+
+C'était pas si compliqué et prendre une feuille avant de me lancer dans tout ce bazar m'aurait évité d'écrire 1600 mots sur le sujet. On a sensiblement les mêmes résultats que précedemment.
+
+![](/assets/pictures/monte-carlo-tarot/last-analytic-p-3.png)
+![](/assets/pictures/monte-carlo-tarot/last-analytic-p-4.png)
+![](/assets/pictures/monte-carlo-tarot/last-analytic-p-5.png)
+
+### Allez, du code
+
+Le code est presqu'identique au précédent, en remplaçant la partie du milieu par un calcul bien plus court.
+
+```python
+# 
+nb_players = args['players']
+nb_cards = 22
+
+wins = [0]*(nb_cards+1)
+# we do not start at 0 in order to handle the boundary conditions
+for card_value in range(nb_players-1, nb_cards+1):
+    wins[card_value] = (float(card_value)/22.0) ** (nb_players - 1)
+```
+
+On génère les graphes comme avant:
+
+```bash
+python last-analytic.py -p 5
+```
+
+
 ## Pour aller plus loin
 
 Parmi les conférences qui m'ont marqué, j'ai beaucoup aimé [Statistics for Hackers](https://www.youtube.com/watch?v=L5GVOFAYi8k) (40mn) ou, plus court, [Statistics without the agonizing pain](https://www.youtube.com/watch?v=5Dnw46eC-0o) (10mn) dont les titres sont explicites: il est question de faire des statistiques avec du code, sans s'embêter avec tout le (nécessaire et expliquable) formalisme mathématique. En raisonnant un peu, dans plein de situations, on peut facilement s'en sortir avec quelques boucles. Ca ressemble à ce qu'on a fait, mais ils proposent des outils un peu différents.

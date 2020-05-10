@@ -17,6 +17,22 @@
 {% endif %}
 {% if site.comments.disqus %}<script src="//{{ site.comments.disqus }}.disqus.com/embed.js" async></script>{% endif %}
 {% if site.comments.isso %}<script data-isso="http://{{ site.comments.isso }}" src="//{{ site.comments.isso }}/js/embed.min.js"></script>{% endif %}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
+  }
+});
+</script>
+<style type="text/css">
+.MathJax .mi, .MathJax .mo {
+    color: inherit;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 
 <body class="{% if site.dark_theme %}dark{% else %}light{% endif %}">
 
