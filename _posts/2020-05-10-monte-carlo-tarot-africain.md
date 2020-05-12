@@ -3,6 +3,7 @@ title: Probabilités de victoire au Tarot Africain avec la méthode de Monte Car
 author: Keirua
 layout: post
 lang: fr
+image: monte-carlo-tarot.png
 ---
 
 Pendant le confinement, on ressort les jeux de cartes et dans mon cas, on a ressorti le tarot africain, un jeu d'annonces qui se joue avec les atouts d'un jeu de tarot. Il y a beaucoup de variantes de ce jeu, j'ai mis les règles que je connais en annexe.
