@@ -24,3 +24,9 @@ Code samples are generated with [`carbon-now`](https://github.com/mixn/carbon-no
 ```bash
 $ yarn global add carbon-now-cli
 ```
+
+When you have it, you can run a script that will generate all the missing
+
+```bash
+python generate-social-cards.py
+```
