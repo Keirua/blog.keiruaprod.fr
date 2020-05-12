@@ -96,7 +96,6 @@ fn main() {
     let git_hash = String::from_utf8(output.stdout).unwrap();
     println!("cargo:rustc-env=GIT_HASH={}", git_hash);
 }
-
 ```
 
 So we write a program that fetches the last commit hash via `git rev-parse HEAD`. [git rev-parse](https://git-scm.com/docs/git-rev-parse) provides the SHA1 of a revision.
