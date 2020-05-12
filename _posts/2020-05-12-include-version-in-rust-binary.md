@@ -1,4 +1,10 @@
-# How to include the build version inside a rust binary
+---
+title: Including the build version inside a rust binary
+author: Keirua
+layout: post
+lang: en
+image: rust-binary-version.rs.png
+---
 
 A recent problem was to include the build version of a rust binary, so that `$ program --version` answers with the appropriate version number.
 
