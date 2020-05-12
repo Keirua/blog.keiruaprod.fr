@@ -3,6 +3,7 @@ title: Better pull requests with GIFs from screen recordings
 author: Keirua
 layout: post
 lang: en
+image: mp4-to-gif.png
 ---
 
 ## TL;DR
