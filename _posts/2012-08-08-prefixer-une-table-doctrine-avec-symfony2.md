@@ -14,7 +14,7 @@ categories:
   - Symfony2
 ---
 <div id="attachment_469" style="width: 201px" class="wp-caption alignright">
-  <a href="http://www.doctrine-project.org/"><img class="size-full wp-image-469" title="Logo doctrine" src="http://keiruaprod.fr/blog/wp-content/uploads/2012/08/doctrine_logo.png" alt="" width="191" height="53" /></a>
+  <a href="http://www.doctrine-project.org/"><img class="size-full wp-image-469" title="Logo doctrine" src="https://keiruaprod.fr/blog/wp-content/uploads/2012/08/doctrine_logo.png" alt="" width="191" height="53" /></a>
   
   <p class="wp-caption-text">
     Doctrine, l&rsquo;ORM de base de Symfony2

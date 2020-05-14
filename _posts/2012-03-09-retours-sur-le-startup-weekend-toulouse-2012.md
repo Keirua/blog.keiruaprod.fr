@@ -11,7 +11,7 @@ robotsmeta:
 categories:
   - Non classé
 ---
-[<img class="alignright size-full wp-image-325" title="StartupWeekend" src="http://keiruaprod.fr/blog/wp-content/uploads/2012/03/startupweekend.png" alt="StartupWeekend" width="150" height="196" />](http://www.StartupWeekend.org)Ce weekend, j&rsquo;étais à l&rsquo;école de Commerce de Toulouse pour participer au [Startup Weekend](http://startupweekend.org/) qui y avait lieu. Le concept ? Réunir des gens et des idées dans un même endroit, sélectionner les idées les plus intéressantes ou prometteuses, monter une équipe, et leur faire construire une startup sur le sujet en un weekend. Je ne connaissais pas le principe il y a à peine un mois, mais l’idée m’a tout de suite séduit. Il y a des weekend de ce genre assez régulièrement aux 4 coins de la France, donc si vous avez l’occasion, n’hésitez pas !  
+[<img class="alignright size-full wp-image-325" title="StartupWeekend" src="https://keiruaprod.fr/blog/wp-content/uploads/2012/03/startupweekend.png" alt="StartupWeekend" width="150" height="196" />](http://www.StartupWeekend.org)Ce weekend, j&rsquo;étais à l&rsquo;école de Commerce de Toulouse pour participer au [Startup Weekend](http://startupweekend.org/) qui y avait lieu. Le concept ? Réunir des gens et des idées dans un même endroit, sélectionner les idées les plus intéressantes ou prometteuses, monter une équipe, et leur faire construire une startup sur le sujet en un weekend. Je ne connaissais pas le principe il y a à peine un mois, mais l’idée m’a tout de suite séduit. Il y a des weekend de ce genre assez régulièrement aux 4 coins de la France, donc si vous avez l’occasion, n’hésitez pas !  
 <!--more-->
 
   

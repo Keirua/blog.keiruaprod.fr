@@ -21,7 +21,7 @@ tags:
   - Silex
 ---
 <div id="attachment_450" style="width: 210px" class="wp-caption alignright">
-  <a href="http://silex.sensiolabs.org/"><img class=" wp-image-450  " title="logo-silex3" src="http://keiruaprod.fr/blog/wp-content/uploads/2012/08/logo-silex3.png" alt="Silex, micro framework PHP" width="200" height="150" /></a>
+  <a href="http://silex.sensiolabs.org/"><img class=" wp-image-450  " title="logo-silex3" src="https://keiruaprod.fr/blog/wp-content/uploads/2012/08/logo-silex3.png" alt="Silex, micro framework PHP" width="200" height="150" /></a>
   
   <p class="wp-caption-text">
     Silex, un micro framework PHP
