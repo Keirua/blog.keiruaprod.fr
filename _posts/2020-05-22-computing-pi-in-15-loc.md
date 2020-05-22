@@ -55,9 +55,9 @@ $$
 we can compute the next values of the sequence:
 
 $$
-a_{n+1} = (a_{n} + b_{n})/2 \\
-b_{n+1} = sqrt(a_{n} * b_{n}) \\
-t_{n+1} = t_n + p_n*((a_n - a_{n+1})^2) \\
+a_{n+1} = \frac{a_{n} + b_{n}}{2} \\
+b_{n+1} = \sqrt{a_{n}b_{n}} \\
+t_{n+1} = t_n + p_n(a_n - a_{n+1})^2 \\
 p_{n+1} = 2*p_n
 $$
 
