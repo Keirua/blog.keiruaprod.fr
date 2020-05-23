@@ -6,11 +6,11 @@ Todo:
 
  - [x] integrate social cards
  - [x] add contribution link
- - [] generate code social cards from code
- - [] generating blog post file (eg http://www.guyroutledge.co.uk/blog/automate-jekyll-post-creation-with-thor)
- - [] generate empty social cards from site title
- - [] htmlvalidator
- - [] add author card
+ - [x] generate code social cards from code
+ - [ ] generating blog post file (eg http://www.guyroutledge.co.uk/blog/automate-jekyll-post-creation-with-thor)
+ - [ ] generate empty social cards from site title
+ - [ ] htmlvalidator
+ - [ ] add author card
 
 ## Tools
 
