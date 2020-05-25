@@ -9,13 +9,22 @@ Todo:
  - [x] generate code social cards from code
  - [ ] generating blog post file (eg http://www.guyroutledge.co.uk/blog/automate-jekyll-post-creation-with-thor)
  - [ ] generate empty social cards from site title
- - [ ] htmlvalidator
+ - [x] html-proofer
+  - [ ] fix issues ;)
  - [ ] add author card
 
 ## Tools
 
 The blog uses [Jekyll](https://jekyllrb.com/)
 The theme is [Contrast](https://github.com/niklasbuschmann/contrast-demo).
+
+## Validation
+
+[html-proofer](https://github.com/gjtorikian/html-proofer) helps to ensure the generated HTML is valid. It is available as a rake task.
+
+```
+bundle exec rake test
+```
 
 ## Social cards
 
