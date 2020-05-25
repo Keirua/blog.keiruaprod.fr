@@ -12,6 +12,10 @@ Todo:
  - [x] html-proofer
   - [ ] fix issues ;)
  - [ ] add author card
+ - [ ] better i18n (https://github.com/untra/polyglot ?)
+ - [ ] add sitemap (https://github.com/jekyll/jekyll-sitemap ?)
+ - [ ] see SEO tags https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md ?
+ - [ ] add/write a linter (https://github.com/plainionist/Plainion.JekyllLint)
 
 ## Tools
 
