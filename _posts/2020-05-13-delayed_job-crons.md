@@ -25,3 +25,9 @@ y (cron_jobs.map do |c| [c.handler.match("job_class: (.*)\n")[1], c.cron] end)
 ```
 
 Not the most robust code out there for sure. Yet robustness and clarity are not what you always need, and these 2 lines can be pasted in a rails console quite easily.
+
+Another option when you want to mess with this jobs in the console is to parse the `job_class` using the Yaml component:
+
+```ruby
+Delayed::Job.pluck(:handler).map { |h|  YAML.load(h).job_data["job_class"] }.group_by{|x| x}.map {|k, v| [k, v.count] }
+```
