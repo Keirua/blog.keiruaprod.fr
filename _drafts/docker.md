@@ -47,3 +47,29 @@ docker-compose -f docker-compose.dev.yml run --rm web rails assets:precompile
 
 # you may need to set the owners occasionnally:
 sudo sudo chown clemk:clemk -R tmp
+
+
+# Docker-machine
+
+It is possible to deploy a production-like environment using docker-machine, inside a virtualbox VM
+
+First, we need to install docker-machine:
+https://docs.docker.com/machine/install-machine/
+
+Then, we can create our VM:
+
+docker-machine rm local-vm-1
+docker-machine create --driver virtualbox local-vm-1
+docker-machine ls
+docker-machine ssh local-env-1 (then 'exit', or ctrl-D to exit)
+docker-machine ssh local-vm-1 "docker -v"
+
+Then, we cana configure our local docker cli tool to be able to communicate with the VM directly:
+
+    docker-machine env local-vm-1
+    eval $(docker-machine env local-vm-1)
+
+Now, all our docker commands will be run (from this terminal) inside this VM.
+
+    docker-machine ls
+
