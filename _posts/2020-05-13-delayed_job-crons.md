@@ -31,3 +31,9 @@ Another option when you want to mess with this jobs in the console is to parse t
 ```ruby
 Delayed::Job.pluck(:handler).map { |h|  YAML.load(h).job_data["job_class"] }.group_by{|x| x}.map {|k, v| [k, v.count] }
 ```
+
+Aaaaand another useful command is to list the error count. Here is a quick and dirty way: it takes the first line of the stack trace, strips the numbers (ids) and sorts the errors by count:
+
+```ruby
+y Delayed::Job.where.not(last_error: nil).pluck(:last_error).map {|e| e&.lines[0].tr('0123456789', '')}.tally.sort_by(&:last)
+```
