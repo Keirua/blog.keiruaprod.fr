@@ -37,3 +37,12 @@ Aaaaand another useful command is to list the error count. Here is a quick and d
 ```ruby
 y Delayed::Job.where.not(last_error: nil).pluck(:last_error).map {|e| e&.lines[0].tr('0123456789', '')}.tally.sort_by(&:last)
 ```
+
+Also, sometimes you want the objects that lead to these errors:
+
+```ruby
+y Delayed::Job.where("last_error ilike '%worksheet%'").pluck(:handler).map { |h|  YAML.load(h).job_data["arguments"] }
+---
+- - _aj_globalid: gid://app/SomeModel/23648
+- - _aj_globalid: gid://app/SomeModel/2364
+```
