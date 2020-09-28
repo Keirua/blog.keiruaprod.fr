@@ -46,3 +46,16 @@ y Delayed::Job.where("last_error ilike '%worksheet%'").pluck(:handler).map { |h|
 - - _aj_globalid: gid://app/SomeModel/23648
 - - _aj_globalid: gid://app/SomeModel/2364
 ```
+
+Finally, in order not to lose some jobs, it can be useful to have dedicated queues:
+
+```bash
+$ bin/delayed_job --queue=mailers -n 4 start
+delayed_job.0: process with pid 227532 started.
+delayed_job.1: process with pid 227534 started.
+delayed_job.2: process with pid 227539 started.
+delayed_job.3: process with pid 227543 started.
+
+$ bin/delayed_job --pool=active_storage_analysis:6 --pool=mailers:2 start  
+```
+
