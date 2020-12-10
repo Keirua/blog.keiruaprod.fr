@@ -7,22 +7,22 @@ image: balloons.png
 
 ![](/assets/pictures/balloons/game/balloon-game-box.jpg)
 
-So my 3-year-old kid has become a huge, huge fan of his game "Ballons." We've been playing many games every day during the last three months. The game is straightforward, so after a while, I had to find something to fuel some interest in playing with him. What about finding a better strategy than him? To do so, we will study the game's properties and write many Monte Carlo simulations.
+My 3-year-old kid has become a huge, huge fan of his card game **"Ballons."** We've been playing many games every day during the last three months. The game is straightforward, so after a while, I had to find something to fuel some interest in playing with him. What about finding a better strategy than him? To do so, we will study the game's properties and write many Monte Carlo simulations.
 
 # The game
 
-Ballon is a game
+[Ballons](https://boardgamegeek.com/boardgame/13490/ballons) is a 2-4 players card game.
 
 These are the rules of the game:
 
- - deal every player 5 balloons.
- - players then pick action cards in turn:
-   - "**pop a balloon** of color x" (4 such cards for each color)
+ - Deal every player 5 balloons.
+ - Each player then pick action cards, one after each other:
+   - "**pop a balloon** of color x" (4 such cards for each color, there are 5 colors)
    - "adult/parent: **recover a balloon of your choice**, if possible" (5 such cards)
  - When you run out of cards in the action deck, you shuffle the discarded cards and keep playing.
- - a player has lost when all his balloons popped
+ - A player has lost when all his balloons popped
 
-That's it.
+That's it. The [ratings](https://boardgamegeek.com/boardgame/13490/ballons/ratings) often say "it’s a great first game for small kids, but it quickly becomes boring for everybody."
 
 **Initial state of the game**
 
@@ -34,13 +34,16 @@ That's it.
 ## Our goal
 
 There were many, but let's see:
- - how long are the games?
- - what are the winning odds of my kid?
- - can we improve those odds?
 
-We will focus on two-player games because that's easier to visualize.
+ - **how long** are the games?
+ - what are the **winning odds** of my kid?
+ - can we **improve those odds**? If so, **how much will we improve**?
 
-The only possible choice in this game happens when you can recover a balloon, and you popped more than one. How do you choose which balloon to recover?
+We will focus on two-player games because that's easier to visualize, and because we only play this.
+
+To answer the last question, we need to model and answer the following question:
+
+> The only possible choice in this game happens when you can recover a balloon, and you popped more than one. **How do you choose which balloon to recover?**
 
 ## A model for my kid's play
 
@@ -48,15 +51,19 @@ My kid seems to choose randomly, so modeling its play was easy:
  - when there is no choice, follow the flow of the game
  - when there is a choice, pick randomly
 
-Improving the play will mean finding a better way to choose
-
 ## Simulating games
 
 I wrote a lot of [rust and python](https://github.com/Keirua/ballons) code in order to find the answers to my questions. I implemented the rules of the game, then wrote various simulations in order to identify some numbers that we'll see in this article. The 200 lines of the [*ballons library*](https://github.com/Keirua/ballons/blob/master/ballons.py) contains the game code. This library is then used in many simulations at the root of the project.
 
-The simulations all are [Monte Carlo based](https://en.wikipedia.org/wiki/Monte_Carlo_algorithm), which means, in short, "run as many games with random initial conditions as you can, then average the results." Due to the simplicity of the game, standard Monte Carlo is enough. 
+The simulations all are **[Monte Carlo based](https://en.wikipedia.org/wiki/Monte_Carlo_algorithm)**, which means, in short, "run as many games with random initial conditions as you can, then average the results." Due to the simplicity of the game, **standard Monte Carlo** is enough. 
+
+## Notes on performances
 
 I did not need to write two implementations: it just happens that it was a fun project, and I got carried away with a never-ending stream of «just one more thing»: more speed, better algorithms, FFI, parallelization, and so on.
+
+Monte Carlo is **iterative**. Accuracy in a Monte Carlo simulation converge with a **square root law**: in order to have one more digit accuracy (so a x10 improvement), you need 10^2 = 100 more iterations. So in order to have a good accuracy for enough digits, you need a lot of iterations, and powers of 100 grow quickly.
+
+I ran between 10k and 49x10 millions simulations per program, which was a bit slow for certain configurations (~30mn) in Python. Using a faster language like Rust helped. Every simulation is independant: Monte Carlo can easily be parallelized, so in the end I took advantage of that as well.
 
 ## Some properties of this game
 
@@ -68,7 +75,7 @@ What makes this game interesting to me is that it sounds easy to simulate and ve
  - Low branching factor
  - No interactions between players
 
-Let's see first what the game depth is, then we will estimate the branching factor.
+Let's see first what the **game depth** is, then we will estimate the **branching factor**.
 
 ### Depth - how long the games are ?
 
@@ -275,11 +282,11 @@ Many things to say already:
 
 Ok, so here we are: we can simulate many games with two players who play randomly, and we can estimate the winning odds when two hands face each other.
 
-It's time to simulate the same thing, but we will change the strategy for one player (ours). There are many possible strategies when you have a choice, like:
+It's time to simulate the same thing, but we will change the strategy for one player (ours). Can we crush him ? Again, the only strategy we need is how to choose which to recover. There are many possible strategies, like:
  - always play the first card you dismissed
  - if you dismissed a red card, recover it, otherwise pick randomly
 
-The thing is, we want to improve our odds. There is something we can use: **deck knowledge**.
+Those do not look promising though: we want to improve our odds. There is something we can use: **deck knowledge**.
 
  > We can count the remaining cards in the action deck for each color. When you have to choose which color to recover, we will choose the least available in the rest of the action deck.
 
@@ -289,7 +296,6 @@ Let's simulate many games for this heuristic:
 
 ```
 python3 gen_hand_heatmap_uniform_with_counter.py -i 100000
-
 ```
 
 Then, I put the result in a heatmap:
@@ -302,7 +308,9 @@ That's a bit hard to read. Did we improve? Let's compute the difference between 
 
 That a small improvement for 11111 and 2111, but that's an improvement anyway! Given the low branching factor and the high randomness, we couldn't expect a considerable improvement regardless.
 
-We can conclude that:
+note: substracting two imprecise numbers increases the imprecision. I never properly quantified the error margin, so I would’nt put too much trust on those numbers.
+
+# We did it! Concluding thoughts
 
  - if you have a 11111 or 2111, you can squeeze between 1 and 6% more chances to win by counting the remaining cards (only count your colors), then when you have the choice, pick the least probable.
  - if you have a 221, 311, or 32, don't bother counting; your odds won't improve much
@@ -310,3 +318,16 @@ We can conclude that:
  - if you have a 5, your branching factor is one no matter what, but you'll win most of the time
 
 Now you know how to play against your 3yo ;)
+
+Ok, so that was a very complicated way to prove my point: **it is possible to improve your odds (here, only or certain configurations) with a simple heuristic, and to quantify the improvement**.
+
+Anyway, down the road we’ve learn a bunch of things about game theory, so that’s a net win.
+
+# Going further
+
+That was fun but I’ve already spent way too much time with this game. Here are some ideas if you think this is a serious project that deserves some more research:
+
+ - you can probably devise a better heuristic
+ - it’s possible to prune the encounter list a bit more. E.g. `red/red/red/blue/blue` vs. `yellow/yellow/yellow/green/purple` is one permutation away from `yellow/yellow/yellow/blue/blue` vs. `red/red/red/green/purple`, which asymptotically have the same odds.
+ - I wanted a simple heuristic, but the trend now is to feed every problem to a neural network. Maybe you could try that?
+ - Go for full tree search, it might be possible. If not, MCTS might help
