@@ -11,7 +11,7 @@ Todo:
 In most applications, you may want to make sure that the email your users provide
 is valid : you want to ensure they'll receive emails, because many things happen through email.
 You may send account validation links, bills, notifications, reports… many things that
-need to reach your customer, because if they don't, they'll probably reach your customer support at some point.
+need to reach your customer. If they don't, they'll probably reach your customer support at some point, be angry, leave, or maybe all of that.
 
 *Validating an email* can mean many things, so here we'll try to check:
 
