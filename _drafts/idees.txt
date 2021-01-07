@@ -1,0 +1,16 @@
+Idees
+
+ - micro services
+ - notes on AI for board games
+ - CR aoc 2020
+ - ideal tech bookshelf
+ - De bruijn sequences
+ - Lottery algo
+ - response to "what is programming"
+ - getting better at chess with programming (memorization, variants)
+ - trad ciechanow
+
+
+ - Various hats in a team
+ - sales summary
+ - distribution canals
