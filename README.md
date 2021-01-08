@@ -2,7 +2,22 @@
 
 This repositoy hosts my technical blog hosted on [blog.keiruaprod.fr](blog.keiruaprod.fr).
 
-Todo:
+## WIP articles
+
+Pretty much many things in the messy `_draft` directory.
+
+## Edition process
+
+[jekyll-compose](https://github.com/jekyll/jekyll-compose) helps to streamline the editing process
+
+```bash
+# Create a new draft
+$ bundle exec jekyll draft "My new draft"
+# Publish
+$ bundle exec jekyll publish _drafts/my-new-draft.md
+```
+
+## Todo:
 
  - [x] integrate social cards
  - [x] add contribution link
