@@ -11,7 +11,7 @@ Akin a travaillé la majeure partie de sa vie dans des programmes spatiaux. Il e
 3. La conception est un processus itératif. Le nombre nécessaire d’itérations est un de plus que ce que vous avez fait actuellement. C’est vrai à tout instant.
 4. Votre meilleure conception s’avèrera inutile dans la conception finale. Apprenez à vivre avec la déception.
 5. Loi de Miller: 3 points déterminent une courbe
-6. Loi d Mar: Tout est linéaire si c’est tracé log-log avec un gros marqueur
+6. Loi de Mar: Tout est linéaire si c’est tracé log-log avec un gros marqueur
 7. Au début de tout projet, la personne qui voudra le plus être le chef d’équipe est le moins susceptible d’en être capable
 8. Dans la nature, l’optimum est presque toujours quelquepart au milieu. Ne croyez pas les assertions qui présentent l’optimum comme un point extrème.
 9. Ne pas avoir les informations dont vous avez besoin n’est jamais une excuse satisfaisante pour ne pas démarrer une analyse.
