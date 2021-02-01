@@ -1,10 +1,16 @@
-solving the 8 queens problem.md
+---
+title: Solving the 8 queens problem
+layout: post
+lang: en
+---
 
-The 8 queens problem is a popular problem that lends itself very well to backtracking.
+The **8 queens problem** is a popular problem: can you place n chess queens on a n*n board, so that no two queens threaten each other ?
 
-When you are studying computer science, implementing is often one of the exercises that help you understand.
+This problem lends itself very well to backtracking; when you are studying computer science, this is often one of the exercises that help you learn it.
 
-Unfortunately, it also has a [closed-form solution](https://en.wikipedia.org/wiki/Eight_queens_puzzle#Solutions) that spoils all the fun.
+The time complexity for the N-queens is usually N!. It’s ok for small N (you most likely only care about N=8 anyway), when as N grows, the algorithm does not scale well.
+
+Fortunately, the problem also has a [closed-form solution](https://en.wikipedia.org/wiki/Eight_queens_puzzle#Solutions) that spoils all the fun. The complexity is linear, so it is way faster to generate a solution.
 
 ```python
 import random
