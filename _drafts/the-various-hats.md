@@ -1,11 +1,11 @@
 ---
-title: The multiple hats of a solo founder
+title: The multiple hats in a tech company
 layout: post
 lang: en
 tags: indiehackers
 ---
 
-# The multiple hats of a solo founder in a tech company
+# The multiple hats in a tech company
 
 This post is a summary of a few years working in small tech startups.
 
